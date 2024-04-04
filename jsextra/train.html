@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body style="background-image: url('rail-background.jpg');">
+    <div class="container">
+        <h1>Welcome back!</h1>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+        <p>Or sign in with:</p>
+        <div class="extra-sign-in">
+            <a href="#"><img src="gmail-icon.png" alt="Gmail"></a>
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="phone-icon.png" alt="Phone"></a>
+        </div>
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+</body>
+</html>

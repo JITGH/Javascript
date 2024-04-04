@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom | Chai</title>
+</head>
+<body style="background-color: black;color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLang(LangName){
+        const li = document.createElement('li')
+        li.innerHTML=`${LangName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLang("python")
+    addLang("TypeScript")
+    addLang("C++")
+
+
+    function addoptilang(LangName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(LangName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addoptilang('golang')
+    addoptilang('ruby')
+
+    //edit
+
+        const secLang=document.querySelector("li:nth-child(2)")
+        const  newli = document.createElement('li')
+        newli.textContent="R"
+        secLang.replaceWith(newli)
+        const fourthlang = document.querySelector('li:nth-child(4)')
+        console.log(fourthlang);
+        const four=document.createElement('li')
+        four.textContent="Angular"
+        //fou.textContent="Bash"
+        //fou.textContent="R"
+        fourthlang.replaceWith(four)
+       // fourthlang.outerHTML='<li>Angular</li>'
+
+// remove
+
+const lastl=document.querySelector('li:last-child')
+lastl.remove()
+</script>
+</html>

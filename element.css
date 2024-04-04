@@ -1,0 +1,16 @@
+p{
+    color: chartreuse;
+}
+a{
+    color: blue;
+}
+li{
+    list-style-type: square;
+}
+.special{
+    color: coral;
+    font-weight: 200;
+}
+span.special{
+    color: green;
+}

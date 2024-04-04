@@ -1,0 +1,12 @@
+.heading{
+    color: brown;
+    text-align: center;
+    text-decoration:dashed;
+}
+button{
+    
+    background-color: chartreuse;
+}
+body{
+    background-color:lightcyan;
+}
